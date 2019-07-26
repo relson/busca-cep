@@ -18,7 +18,7 @@ namespace cep
 
         private async void BuscarCepAsync(object sender, EventArgs args)
         {
-            var cep = Cep.Text.Trim();
+            var cep = (Cep.Text ?? String.Empty).Trim();
 
             if (CepEhValido(cep))
             {
@@ -42,7 +42,7 @@ namespace cep
         {
             var valido = true;
 
-            if (cep.Length != 8)
+            if (String.IsNullOrEmpty(cep) ||  cep.Length != 8)
             {
                 DisplayAlert("DEU RUIM", "O CEP deve conter 8 caracteres.", "OK");
 

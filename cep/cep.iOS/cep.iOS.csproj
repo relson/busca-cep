@@ -114,6 +114,10 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Image.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Image.imageset\buscaCEP.png" />
+    <ImageAsset Include="Assets.xcassets\Image-1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Image-1.imageset\correios.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -130,7 +134,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\cep\cep.csproj">
-      <Project>{BC2551BE-F108-4277-97B8-17D1781A1AEC}</Project>
+      <Project>{2A58290B-89FC-4775-BF4E-AB07740B8CAF}</Project>
       <Name>cep</Name>
     </ProjectReference>
   </ItemGroup>
